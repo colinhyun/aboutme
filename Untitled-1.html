@@ -1,0 +1,294 @@
+!<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/css/css_reset.css"> -->
+    <style>
+        p-text-indent {
+         text-indent: 33px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+
+                <!-- nav for tab -->
+                <div class="border-bottom border-top bg-white border-1 sticky-top nav">
+                    <div class="container p-0 px-md-3">
+                        <ul class="nav d-flex justify-content-between justify-content-md-start fs-lg-6 fs-mobile-5"
+                            role="tablist" aria-orientation="vertical">
+                            <li class="nav-item">
+                                <a class="nav-link link-dark py-3 active" data-bs-toggle="pill" href="#tab-detail"
+                                    role="tab" aria-controls="tab-detail" aria-selected="true"
+                                    onclick="gotoTab()">自我介紹</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-dark py-3" data-bs-toggle="pill" href="#tab-news" role="tab"
+                                    aria-controls="tab-news" aria-selected="false" onclick="gotoTab()">越南語專區</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-dark py-3" data-bs-toggle="pill" href="#tab-qa" role="tab"
+                                    aria-controls="tab-qa" aria-selected="false" onclick="gotoTab()">籃球專區</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-dark py-3" data-bs-toggle="pill" href="#tab-comment" role="tab"
+                                    aria-controls="tab-comment" aria-selected="false" onclick="gotoTab()">相簿?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 下方主要區塊 -->
+                <div class="container">
+                    <div class="my-4">
+                        <div class="row g-md-5">
+                            <!-- 左邊tab區塊 -->
+                            <div class="col-lg-8">
+                                <div class="tab-content mb-5">
+                                    <!-- 專案介紹 -->
+                                    <div class="tab-pane fade active show" id="tab-detail" role="tabpanel">
+                                        <img src="images/p1.jpg" class="img-fluid w-100" alt="">
+
+                                        <h3
+                                            class="mt-3 mb-1 ps-3 fs-lg-4 fs-mobile-2 border-start border-4 border-warning fw-bolder">
+                                            自我介紹
+                                        </h3>
+                                        <div class="tab-pane fade" id="tab-detail" role="tabpanel">
+                                            <ul class="list-unstyled accordion accordion-flush" id="qa-accordion">
+                                                <li class="accordion-item">
+                                                    <h3 class="accordoion-header" id="flush-heading1-1">
+                                                        <button
+                                                            class="accordion-button btn-outline-warning fs-lg-sm fs-mobile-4 collapsed"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#flush-collapseOne1-1" aria-expanded="false"
+                                                            aria-controls="flush-collapseOne1-1">
+                                                            <span
+                                                                class="bg-warning text-dark font-baloo-tamma fs-sm fw-bolder text-center rounded me-3 lh-lg letter-spacing-7">
+                                                                Q1
+                                                            </span>
+                                                            影片拍完之後可以編輯嗎？
+                                                        </button>
+                                                    </h3>
+                                                    <div id="flush-collapseOne1-1" class="accordion-collapse collapse"
+                                                        aria-labelledby="flush-heading1-1" data-bs-parent="#qa-accordion">
+                                                        <p
+                                                            class="accordion-body mb-0 fs-lg-sm fs-mobile-4 lh-lg text-secondary">
+                                                            可以進行簡易的編輯，內建 5
+                                                            種濾鏡，影片秒數有3秒、5秒、10秒可以選擇，拍完的當下可
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="mt-3 fs-lg-4 fs-mobile-2 fw-bolder">
+                                            成長背景
+                                        </h4>
+                                        <p class="lh-lg text-justify mt-2">
+                                            我叫林廷瑋，生長於雲林風情純樸的水林鄉蕃薯村，國中畢業後，考量就業導向以及個人興趣，應屆選擇了五專就讀。畢業於國立臺中科技大學資訊管理系。家中有四位成員，父親為畜牧業，母親則為家管在家中幫忙父親，姐姐目前則是畢業於逢甲大學行銷系，已在臺中工作中。還依稀記得莫拉克颱風肆虐台灣，雲林也無一倖免，因雲林地層下陷的問題，所以淹水特別嚴重，爸媽在大雨中辛苦的將鵝趕到農舍裡，真的很辛苦，因此來臺中之後，我住在學校宿舍五年替爸媽省了不少的房租，在二技時也靠著自己打工支付房租跟越南遊學團的費用，我希望我可以讓我的爸媽過上好的生活。
+                                            
+                                            
+                                        </p>
+
+                                        <p class="lh-lg text-justify mt-2">
+                                            在我的眼中辛苦的父親和母親是非常偉大的，所以只要我回到家需要清理農舍的時候，我也會一起幫忙，這使我養成了刻苦耐勞的個性，加上父母親非常的重視品德教育、自律能力及學習的態度，因此父親和母親就要求我們要有良好的品格，尊重每個人的性格、意見和隱私，學習上則是要求做好每一件事，面對事情要有毅力，不要輕言放棄，最重要的是對自己做過的事負責。在這樣的家庭成長環境下，因此養成了我刻苦耐勞、自律、主動學習和負責任的特質，使我在學業上都有不錯的成績表現。
+
+                                        </p>
+
+                                        <img src="pic/1642865060.jpg" alt="留下當下的美好/文章示意圖" class="img-fluid mt-4 w-100">
+
+                                        <h4 class="mt-3 fs-lg-4 fs-mobile-2 fw-bolder">
+                                            個人特質
+                                        </h4>
+                                        <label class="fw-bolder">1.良好的品格</label>
+
+                                        <p class="lh-lg text-justify mt-2">
+                                            
+                                            因為父親和母親的關係下，良好的品格已是我們家庭奉行的理念，在這樣的環境中，培養出我良好品格的特質。尤其是對於同儕方面，皆會尊重大家的意見，與同儕相處融洽，只要我有能力多幫忙朋友的，我一定盡量地去幫忙。
+                                            
+                                            
+                                        </p>
+                                        <br>
+                                        <label class="fw-bolder">2.自主學習</label>
+                                        <p class="lh-lg text-justify mt-2">
+                                            在學習專業科目的過程中會發現到自己的不足，而在課餘時間自主學習不足的部分，另外為了增加本身在職場的就業能力，則是在閒暇時間考取的Word電腦軟體乙級的證照，除此之外我也有購買一些網頁前端的教學，讓我在程式撰寫方面能更加精進。
+                                        </p>
+                                        <h4 class="mt-3 fs-lg-4 fs-mobile-2 fw-bolder">
+                                            求學經歷
+                                        </h4>
+                                        
+
+                                        <p class="lh-lg text-justify mt-2">
+                                            
+                                            我叫林廷瑋，我就讀於國立臺中科技大學二技部資訊管理系，專長是程式撰寫、軟體應用，程式撰寫主要是前端的美化部分，在軟體文書處理如：Word、PowerPoint等具有丙級電腦軟體應用。在2017年3月時，則是利用閒暇時間考取了Word電腦軟體乙級的證照，除了資管背景讓我在電腦操作沒有問題外，近期也在密集準備英文證照，成為一位國際人才。我來自雲林的一個小村落，家中小康，跳脫原本的舒適圈，隻身一人來到臺中生活，在學校宿舍中；學到了許多事情，第一次的洗衣服，第一次跟不認識的人睡在一起，這讓我有了獨立生活的能力，也讓我學會了怎麼與人相處，而在學校當中，我最愛的運動是籃球，因為團隊合作使我對籃球充滿熱情，而運動則是可以讓我有體力去做我想要做的事；在就學期間中的暑假，我利用大專生可以暑假當兵的機會， 當完了兵之後，短短數月我學到了團體生活跟忍耐等等，相信對於職場上一定也會有所幫助的。
+                                            
+                                            
+                                        </p>
+                                        <br>
+                                        
+                                        <p class="lh-lg text-justify mt-2">
+                                            五專生活中，因為有別於高中職不同的學制，故有了許多的思想碰撞，磕磕碰碰的慢慢往前進，不過正因為如此，我比別人多了一份認真打拼的精神，個性開朗，待人誠懇的性格使我有幸的在班上擔任了四次班代一次副班代，從班代的職務中讓我學習到負責任是一件非常重要的事情，也因為責任感使我不斷成長和學習。系學會中則擔任器材長的職位，學習如何接洽廠商器材讓我不再怕生，學會跟陌生人溝通，相信這在職場當中都是很重要的能力。我相信無論在學校上課，或是在外面工作，最需要的就是熱忱和有一顆肯學習的心，如上述這些在學校、宿舍、當兵的經驗，讓我學習到很多待人處事及責任感，寫程式永遠都在學習，但只要有一顆積極態度的心，相信問題一定迎刃而解。
+                                        </p>
+
+
+                                        
+                                    </div>
+
+                                    <!-- tab 常見問答 -->
+                                    <div class="tab-pane fade" id="tab-news" role="tabpanel">
+                                        <ul class="list-unstyled accordion accordion-flush" id="qa-accordion">
+                                            <li class="accordion-item">
+                                                <h3 class="accordoion-header" id="flush-headingOne">
+                                                    <button
+                                                        class="accordion-button btn-outline-warning fs-lg-sm fs-mobile-4 collapsed"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                                        aria-controls="flush-collapseOne">
+                                                        <span
+                                                            class="bg-warning text-dark font-baloo-tamma fs-sm fw-bolder text-center rounded me-3 lh-lg letter-spacing-7">
+                                                            Q1
+                                                        </span>
+                                                        影片拍完之後可以編輯嗎？
+                                                    </button>
+                                                </h3>
+                                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne" data-bs-parent="#qa-accordion">
+                                                    <p
+                                                        class="accordion-body mb-0 fs-lg-sm fs-mobile-4 lh-lg text-secondary">
+                                                        可以進行簡易的編輯，內建 5
+                                                        種濾鏡，影片秒數有3秒、5秒、10秒可以選擇，拍完的當下可
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="accordion-item">
+                                                <h3 class="accordion-header" id="flush-headingTwo">
+                                                    <button
+                                                        class="accordion-button btn-outline-warning collapsed fs-lg-sm fs-mobile-4"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                                        aria-controls="flush-collapseTwo">
+                                                        <span
+                                                            class="bg-warning text-dark font-baloo-tamma fw-bolder text-center rounded fs-sm me-3 lh-lg letter-spacing-7">
+                                                            Q2
+                                                        </span>
+                                                        補充包底片要去哪裡購買呢？
+                                                    </button>
+                                                </h3>
+                                                <div class="accordion-collapse collapse" id="flush-collapseTwo"
+                                                    aria-labelledby="flush-headingTwo" data-bs-parent="#qa-accordion">
+                                                    <p
+                                                        class="accordion-body mb-0 pe-3 fs-lg-sm fs-mobile-4 lh-lg text-secondary">
+                                                        本產品可以兼容 i-type 及 600
+                                                        相片，各大網路平台皆有販售。
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="accordion-item">
+                                                <h3 class="accordion-header" id="flush-headingThree">
+                                                    <button
+                                                        class="accordion-button btn-outline-warning collapsed fs-lg-sm fs-mobile-4"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                                        aria-controls="flush-collapseThree">
+                                                        <span
+                                                            class="bg-warning text-dark font-baloo-tamma fw-bolder text-center rounded fs-sm me-3 lh-lg letter-spacing-7">
+                                                            Q3
+                                                        </span>
+                                                        退換貨方式及規則
+                                                    </button>
+                                                </h3>
+                                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingThree" data-bs-parent="#qa-accordion">
+                                                    <p
+                                                        class="accordion-body mb-0 pe-3 fs-lg-sm fs-mobile-4 lh-lg text-secondary">
+                                                        因商品封條多為一次性包裝，商品退貨時必須回復原狀，亦即必須回復至您收到商品時的原始狀態，且會視回收的商品狀態另外酌收額外的整新費用，請您務必確認有購買需求後再行拆封，感謝您的配合。
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="accordion-item">
+                                                <h3 class="accordion-header" id="flush-headingFour">
+                                                    <button
+                                                        class="accordion-button btn-outline-warning collapsed fs-lg-sm fs-mobile-4"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                                        aria-controls="flush-collapseFour">
+                                                        <span
+                                                            class="bg-warning text-dark font-baloo-tamma fw-bolder text-center rounded fs-sm me-3 lh-lg letter-spacing-7">
+                                                            Q4
+                                                        </span>
+                                                        印出來的拍立得照片需要充電嗎？
+                                                    </button>
+                                                </h3>
+                                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingFour" data-bs-parent="#qa-accordion">
+                                                    <p
+                                                        class="accordion-body mb-0 pe-3 fs-lg-sm fs-mobile-4 lh-lg text-secondary">
+                                                        不用，取出後稍微搖晃，相片與空氣接觸數秒後便會產生圖像顏色。
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="accordion-item">
+                                                <h3 class="accordoion-header" id="flush-headingFive">
+                                                    <button
+                                                        class="accordion-button btn-outline-warning collapsed fs-lg-sm fs-mobile-4"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                                        aria-controls="flush-collapseFive">
+                                                        <span
+                                                            class="bg-warning text-dark font-baloo-tamma fw-bolder text-center rounded fs-sm me-3 lh-lg letter-spacing-7">
+                                                            Q5
+                                                        </span>
+                                                        運送方式及付款方式有哪些呢？
+                                                    </button>
+                                                </h3>
+                                                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingFive" data-bs-parent="#qa-accordion">
+                                                    <p
+                                                        class="accordion-body mb-0 pe-3 fs-lg-sm fs-mobile-4 lh-lg text-secondary">
+                                                        可以選擇超商取貨及宅配，付款方式有銀行轉帳及信用卡支付。
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="accordion-item">
+                                                <h3 class="accordion-header" id="flush-headingSix">
+                                                    <button
+                                                        class="accordion-button btn-outline-warning collapsed fs-lg-sm fs-mobile-4"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                                        aria-controls="flush-collapseSix">
+                                                        <span
+                                                            class="bg-warning text-dark font-baloo-tamma fw-bolder text-center rounded fs-sm me-3 lh-lg letter-spacing-7">
+                                                            Q6
+                                                        </span>
+                                                        退換貨方式及規則
+                                                    </button>
+                                                </h3>
+                                                <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingSix" data-bs-parent="#qa-accordion">
+                                                    <p
+                                                        class="accordion-body mb-0 pe-3 fs-lg-sm fs-mobile-4 lh-lg text-secondary">
+                                                        因商品封條多為一次性包裝，商品退貨時必須回復原狀，亦即必須回復至您收到商品時的原始狀態，且會視回收的商品狀態另外酌收額外的整新費用，請您務必確認有購買需求後再行拆封，感謝您的配合。
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+    </header>
+    <main></main>
+    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
